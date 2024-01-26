@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Meu Portifolio</title>
+  </head>
+  <body class="flex h-screen flex-col lg:items-center bg-zinc-900">
+    <nav
+      id="MENU"
+      class="fixed w-screen h-screen flex lg:hidden bg-zinc-600 text-white text-5xl justify-center flex-col items-center gap-10"
+    >
+      <section id="MENU-ICON-CLOSE" class="absolute top-8 right-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m0-8"
+          />
+        </svg>
+      </section>
+      <section>Works</section>
+      <section>Blog</section>
+      <section>Contato</section>
+    </nav>
+    <main class="w-full lg:max-w-7xl h-screen">
+      <header class="bg-zinc-800 flex w-full flex-col h-12">
+        <section
+          id="MENU-ICON"
+          class="flex w-full justify-end my-2 text-white p-2 lg:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M20.75 7a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75m0 5a.75.75 0 0 1-.75.75H4a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 .75.75"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </section>
+        <section
+          class="flex justify-end gap-5 text-white font-medium mt-5 mr-48"
+        >
+          <section class="hidden lg:flex">Works</section>
+          <section class="hidden lg:flex">Blog</section>
+          <section class="hidden lg:flex">Contato</section>
+        </section>
+      </header>
+      <section class="lg:flex lg:flex-row-reverse">
+        <section class="flex w-full bg-zinc-800 justify-center lg:items-center">
+          <img
+            class="flex flex-col lg:w-60 lg:h-60"
+            src="./assets/images/ellipse 1.png"
+            alt=""
+          />
+        </section>
+        <section class="lg:ml lg:pt-16 bg-zinc-800">
+          <section class="flex w-full bg-zinc-800">
+            <section
+              class="text-white font-bold text-3xl justify-center text-center m-5 lg:text-[44px] lg:justify-start"
+            >
+              Olá, sou aluno do curso de Front-End da Elaborata!
+            </section>
+          </section>
+          <section class="flex w-full bg-zinc-800 lg:justify-start lg:ml-5">
+            <section
+              class="text-white text-sm flex justify-center text-center m-5 lg:text-base"
+            >
+              Sejam bem-vindos ao meu site portfólio. Aqui você irá encontrar
+              todas as tecnologias que eu dominio e alguns posts sobre
+              programação em meu blog pessoal. Obrigado pela visita!
+            </section>
+          </section>
+          <section
+            class="flex w-full bg-zinc-800 justify-center p-5 lg:justify-start lg:ml-5"
+          >
+            <button class="text-white bg-red-500 h-12 w-44">Download CV</button>
+          </section>
+        </section>
+      </section>
+
+      <section class="flex bg-zinc-700 w-full text-white flex-col gap-6 pb-10">
+        <section class="w-full flex p-5 justify-between">
+          <section class="font-bold text-lg">Posts Recentes</section>
+          <section class="text-red-500 font-bold text-lg">
+            <a href="">Ver tudo</a>
+          </section>
+        </section>
+        <section class="lg:flex lg:flex-row">
+          <section
+            class="bg-zinc-800 w-72 lg:w-1/2 ml-8 shadow-md shadow-white flex flex-col p-3 mb-10"
+          >
+            <section class="font-bold text-2xl">Front End Elaborata</section>
+            <section class="flex gap-9 mt-10">
+              <section class="border-r-2 pr-8 border-rose-500 text-sm">
+                25 Jan 2024
+              </section>
+              <section class="text-sm">Tailwind CSS</section>
+            </section>
+            <section class="text-base mt-5">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </section>
+          </section>
+          <section
+            class="bg-zinc-800 w-72 lg:w-1/2 ml-8 flex flex-col p-4 lg:mr-8"
+          >
+            <section class="font-bold text-2xl">Framework CSS</section>
+            <section class="flex gap- mt-10">
+              <section class="border-r-2 pr-8 border-rose-500 text-sm">
+                25 Jan 2024
+              </section>
+              <section class="ml-10 text-[13px]">Typescript c/ React</section>
+            </section>
+            <section class="text-base mt-6">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </section>
+          </section>
+        </section>
+      </section>
+      <section class="flex bg-zinc-800 w-full text-white flex-col gap-6 p-5">
+        <section class="flex w-full flex-col">
+          <section class="w-full flex p-5 justify-between">
+            <section class="font-bold text-lg text-white lg:hidden">
+              Featured works
+            </section>
+            <section class="hidden lg:flex lg:text-xl">Meu Portifolio</section>
+            <section class="text-red-500 font-bold text-lg lg:hidden">
+              <a href="">Ver tudo</a>
+            </section>
+          </section>
+        </section>
+        <section class="lg:flex lg:flex-row">
+          <img
+            src="./assets/images/rectangle 30.svg"
+            alt=""
+            class="flex flex-col w-full lg:w-60"
+          />
+          <section class="lg:ml-5">
+            <section
+              class="text-white font-bold text-xl mb-5 mt-5 lg:flex lg:text-3xl"
+            >
+              Dashboard para gestão de estoque
+            </section>
+            <section class="flex gap-11 mt-1 mb-5">
+              <section
+                class="bg-white text-black text-xl w-16 text-center font-bold rounded-2xl"
+              >
+                2024
+              </section>
+              <section>
+                <span class="text-slate-400 font-bold text-xl">Cliente:</span>
+                <span class="text-red-400 font-bold text-xl"
+                  >Lojas FerMart</span
+                >
+              </section>
+            </section>
+            <section class="text-sm lg:text-xl">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </section>
+          </section>
+        </section>
+        <hr class="border-t border-gray-500 border-2" />
+        <section class="lg:flex lg:flex-row">
+          <img
+            class="lg:flex lg:w-60"
+            src="./assets/images/rectangle 32.svg"
+            alt=""
+          />
+          <section class="lg:ml-5">
+            <section
+              class="text-white font-bold mb-5 mt-5 text-xl lg:flex lg:text-3xl lg:mb-5"
+            >
+              Aplicativo para controle de contas
+            </section>
+            <section class="flex gap-11 mt-1">
+              <section
+                class="bg-white text-black text-xl mb-5 mt-5 w-16 text-center font-bold rounded-2xl lg:mb-5"
+              >
+                2024
+              </section>
+              <section>
+                <span class="text-slate-400 font-bold text-xl">Cliente:</span>
+                <span class="text-red-400 font-bold text-xl"
+                  >Lojas FerMart</span
+                >
+              </section>
+            </section>
+            <section class="text-sm lg:text-xl">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </section>
+          </section>
+        </section>
+        <hr class="border-t border-gray-500 border-2" />
+        <section class="lg:flex lg:flex-row">
+          <img
+            class="lg:flex lg:w-60"
+            src="./assets/images/ultimam foto.png"
+            alt=""
+          />
+          <section class="lg:ml-5">
+            <section
+              class="text-white font-bold text-xl mb-5 mt-5 lg:flex lg:text-3xl lg:mb-5"
+            >
+              Site para Imobiliária
+            </section>
+            <section class="flex gap-11 mt-1">
+              <section
+                class="bg-white text-black text-xl w-16 mb-5 text-center font-bold rounded-2xl lg:mb-5"
+              >
+                2024
+              </section>
+              <section>
+                <span class="text-slate-400 font-bold text-xl">Cliente:</span>
+                <span class="text-red-400 font-bold text-xl"
+                  >Lojas FerMart</span
+                >
+              </section>
+            </section>
+            <section class="text-sm lg:text-xl">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </section>
+          </section>
+        </section>
+      </section>
+      <footer>
+        <img class="lg:hidden" src="./assets/images/footer.svg" alt="" />
+        <img class="hidden lg:flex" src="./assets/images/frame.png" alt="" />
+      </footer>
+    </main>
+    <script>
+      $("#MENU").hide();
+      function handleMenu(type) {
+        switch (type) {
+          case "show":
+            $("#MENU").show();
+            $("#MENU").removeClass("animate__fadeOut");
+            $("#MENU").addClass("animate__animated animate__fadeIn");
+            break;
+          case "hide":
+            $("#MENU").removeClass("animate__fadeIn");
+            $("#MENU").addClass("animate__animated animate__fadeOut");
+            setTimeout(function () {
+              $("#MENU").hide();
+            }, 1000);
+            break;
+
+          default:
+            break;
+        }
+      }
+      $("#MENU-ICON").click(() => handleMenu("show"));
+      $("#MENU-ICON-CLOSE").click(() => handleMenu("hide"));
+    </script>
+  </body>
+</html>
